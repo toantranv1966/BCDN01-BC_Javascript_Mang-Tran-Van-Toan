@@ -5,10 +5,262 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BC_Javascript_Mang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="col-5 py-3">
+            <form>
+                <div class="form-group">
+                  <label for="">Nhập các số nguyên</label>
+                  <input type="number" class="form-control" id="inputNumber" placeholder="Enter number">
+                </div>
+                <button type="button" class="btn btn-primary" id="btn-submit">Thêm số</button>
+                <div
+                id="mangsonguyen" class="alert alert-success" style="display:none">
+                </div>
+              </form>
+        </div>
 
+        <!-- Bài 1 : Tính tổng các số dương trong mãng -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">1</span>
+                      Tổng số dương
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-sum">Tổng số dương </button>
+                    <div
+                    id="noti-tongSoDuong" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bài 2 : Đếm tổng các số dương trong mãng -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset2" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">2</span>
+                      Đếm số dương
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset2">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-Count">Đếm số dương </button>
+                    <div
+                    id="noti-demSoDuong" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bài 3 : Tìm số nhỏ nhất trong mãng -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset3" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">3</span>
+                      Tìm số nhỏ nhất
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset3">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-min">Tìm số nhỏ nhất</button>
+                    <div
+                    id="noti-timSoNN" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!--Bài 4 : Tìm số dương nhỏ nhất  -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset4" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">4</span>
+                      Tìm số dương nhỏ nhất
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset4">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="timSoduongMin">Số dương nhỏ nhất</button>
+                    <div
+                    id="noti-timSoDuongNN" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!--Bài 5 : Tìm số chẵn cuối cùng trong mãng -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset5" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">5</span>
+                        Tìm số chẵn cuối cùng
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset5">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-soChanCC">Số chẵn cuối cùng</button>
+                    <div
+                    id="noti-timSoChanCC" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bài 6 : Đỗi chỗ 2 giá trị trong mãng theo vi trí -->
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset6" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">6</span>
+                        Đỗi chỗ
+                    </a>
+                </p>
+            </div>
+              <div class="collapse" id="collapset6">
+                <form>
+                    <div class="form-group">
+                      <label for="">Đổi chổ 2 giá trị trong mãng theo vị trí</label>
+                      <input type="number" class="form-control" id="inputNumber2" placeholder="Enter number">
+                      <button type="button" class="btn btn-primary" id="btn-soNguyen2">Thêm số</button><br>
+                      <label for="">Vị trí 1</label>
+                      <input type="number" class="form-control" id="inputIndex1" placeholder="Vị trí 1">
+                      <label for="">Vị trí 2</label>
+                      <input type="number" class="form-control" id="inputIndex2" placeholder="Vị trí 2">
+                    </div>
+                    <div
+                    id="mangSoNguyen2" class="alert alert-success" style="display:none">
+                    </div>
+                    <div
+                    id="mangDaDoi" class="alert alert-success" style="display:none">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn-doiCho">Đổi chổ </button>
+                </form>
+              </div>
+        </div>  
+
+        <!-- Bài 7 : Sắp xếp mãng theo thứ tự tăng dần -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset7" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">7</span>
+                        Sắp xếp tăng dần
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset7">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-sapXepMang">Sắp xếp tăng dần</button>
+    
+                    <div
+                    id="noti-sapXep" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bài 8: Tìm số nguyên tố đầu tiên trong mãng -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset8" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">8</span>
+                        Tìm số nguyên tố đầu tiên trong mãng 
+                    </a>
+    
+                </p>
+            </div>
+              <div class="collapse" id="collapset8">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-soNT">Tìm số nguyên tố đầu tiên</button>
+                    <div
+                    id="noti-soNT" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Bài 9: Đếm số nguyên trong mãng số thực -->
+
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset9" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">9</span>
+                        Đếm số nguyên
+                    </a>
+                </p>
+            </div>
+              <div class="collapse" id="collapset9">
+                <form>
+                    <div class="form-group">
+                      <input type="number" class="form-control" id="inputRealNumber" placeholder="Enter number">
+                      <button type="button" class="btn btn-primary" id="btn-soThuc">Thêm số</button><br>
+                    </div>
+                    
+                    <div
+                    id="mangSoThuc" class="alert alert-success" style="display:none">
+                    </div>
+    
+                </form>
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-timSoNguyen">Đếm số nguyên </button>
+    
+                    <div
+                    id="demSoNguyen" class="alert alert-success" style="display:block" >
+                    </div>
+                    
+                </div>
+              </div>
+            
+        </div>   
+        <div class="col-5">
+            <div class="alert alert-primary" style="margin-bottom:0" role="alert">
+                <p>
+                    <a class="" data-toggle="collapse" href="#collapset10" role="button" aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
+                        <span class="badge badge-light">10</span>
+                        So sánh số lượng số âm & dương
+                    </a>
+                </p>
+              </div>
+              <div class="collapse" id="collapset10">
+                <div class="card card-body">
+                    <button type="button" class="btn btn-primary" id="btn-soSanh">So sánh</button>
+                    <div
+                    id="noti-soSanh" class="alert alert-success" style="display:block" >
+                    </div>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
     <script src="main.js"></script>
